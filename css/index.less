@@ -1,0 +1,223 @@
+@charset "utf-8";
+/*-------------------全局初始化样式--------------------------------*/
+
+body{ padding:0; margin:0 auto; font-size: 14px; line-height: 1.42857143; font-family:arial,Microsoft YaHei,'微软雅黑','宋体'; color: #666460; min-width: 320px; width: 100%; zoom:1;
+/*禁用Webkit内核浏览器的文字大小调整功能*/
+-webkit-text-size-adjust:none; 
+/*取出点击出现半透明的灰色背景*/
+-webkit-tap-highlight-color:rgba(0,0,0,0); 
+-webkit-tap-highlight:rgba(0,0,0,0);     
+/*设置字体的抗锯齿或者说光滑度*/
+-webkit-font-smoothing: antialiased;
+}
+/*默认去除ul、li的默认样式*/
+.p,.h1,.h2,.h3,.h4,.h5,.h6{ margin: 0; padding: 0;}
+.ul,.dl,.ul li,.dl dd,.dl dt{ list-style:none; margin: 0; padding: 0;} 
+/*初始化下拉菜单、单行输入框、多行输入框的样式*/
+select,input,textarea{ border-radius:0; -webkit-border-radius:0; color:#666460;} 
+/*表单元素获得焦点时不显示虚线框*/
+input:focus { outline: none;}
+input,button,select,textarea{ outline:none;/*-webkit-appearance:none;*//*强制去除表单自带的样式*/ font-family:arial,Microsoft YaHei,'微软雅黑','宋体'; } 
+/*不允许多行输入文本框有滚动条*/
+textarea{ resize:none;/*-webkit-appearance:none;*//*强制去除textarea自带的样式*/ } 
+/*初始化表单元素样式*/
+textarea,input,select { background:none; border:none; margin:0; padding:0;}
+/*初始化HTML5标签样式*/
+audio,canvas,progress,video { display: inline-block; vertical-align:baseline;}
+article,aside,footer,header,hgroup,nav,section,figure,figcaption{ display:block;}
+/*去除figure边距*/
+figure,figcaption{ margin:0px; padding:0px;}
+
+/*初始化图片样式*/
+img{ border:none; border:0; max-width:100%; vertical-align:top;}
+
+/*初始化a的样式和字体样式*/
+a{ color:#666460; text-decoration:none; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+a:focus {outline:none; -moz-outline:none;}
+a:hover{ color: #0097fb;}
+
+/*清除浮动*/
+.clear{ clear:both; height:0px; overflow:hidden;}
+.clearfix:after { content: "."; display: block; height: 0; visibility: hidden; clear: both;
+ font-size: 0px;}
+.clearfix { zoom: 1;}
+
+/* -----------初始化--------------- */
+
+#container{
+	height: 100vh;
+	width: 100%;	
+ .bg{
+ 	position: absolute;
+	width: 100%;
+	height: 100vh;//窗口高度
+	background: url("../image/bg1.jpg") no-repeat;
+	background-size: 100% 100%;
+ }		
+ .container-fluid {
+ 	// 顶部top less代码
+	.row-top{
+	 div{
+	 	height: 76px;
+		background-color: #5C8FCC;
+	 }
+	 .top-left-1{
+	 	position: relative;
+		.row-top-leftLogo{
+			display: inline-block;
+			width: 82px;
+			height: 76px;
+			margin: 4px 0 0 88px;
+			background-image: url("../image/topLogo.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}	
+		.row-top-leftTime {
+			display: inline-block;
+			font-size: 16px;
+			position: absolute;
+			left:225px;
+			top: 45px;
+			font-family: arial, Microsoft YaHei, "微软雅黑", "宋体";
+			color:rgb(255, 255, 255);
+		}
+		.row-top-leftWeek {
+			font-size: 18px;
+			position: absolute;
+			left:400px;
+			top: 45px;
+			font-family: arial, Microsoft YaHei, "微软雅黑", "宋体";
+			color:rgb(255, 255, 255);
+		}
+	 }
+	 .top-left-4 {
+	 	position: relative;
+	 	.top-left-4-KSDH {
+	 		font-size: 18px;
+			position: absolute;
+			left:0px;
+			top: 40px;
+			font-family: arial, Microsoft YaHei, "微软雅黑", "宋体";
+			color:rgb(255, 255, 255);
+	 	}
+	 	a:nth-of-type(1) {
+			display: inline-block;
+			width: 53px;
+			height: 53px;
+			margin: 15px 0 0 108px;
+			background-image: url("../image/topWeixin.png");		
+			background-repeat: no-repeat;
+			background-size: cover;
+	 	}
+	 	a:nth-of-type(2) {
+			display: inline-block;
+			width: 52px;
+			height: 54px;
+			margin: 15px 0 0 30px;
+			background-image: url("../image/topZiti.png");		
+			background-repeat: no-repeat;
+			background-size: cover;
+	 	}
+	 	a:nth-of-type(3) {
+			display: inline-block;
+			width: 52px;
+			height: 53px;
+			margin: 15px 0 0 30px;
+			background-image: url("../image/topWeibo.png");		
+			background-repeat: no-repeat;
+			background-size: cover;
+	 	}
+	 }
+
+	}
+ }
+ // footer底部
+	.footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: 141px;
+		.waveWrapper{
+			overflow: hidden;
+		    position: absolute;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    top: 0;
+		    margin: auto;
+		    .waveWrapperInner{
+		    	position: absolute;
+			    width: 100%;
+			    overflow: hidden;
+			    height: 100%;
+			    bottom: -1px;
+		    }
+		    .bgTop {
+		    	z-index: 15;
+    			opacity: 1;
+    			.waveTop{
+    				background-size: 50% 138px;
+    				animation: move-wave 3s;
+				   -webkit-animation: move-wave 3s;
+				   -webkit-animation-delay: 1s;
+				   animation-delay: 1s;
+    			}
+    			.wave{
+    				position: absolute;
+				    left: 0;
+				    width: 200%;
+				    height: 100%;
+				    background-repeat: repeat no-repeat;
+				    background-position: 0 bottom;
+				    transform-origin: center bottom;
+    			}
+		    }
+		    .bgMiddle{
+		    	z-index: 10;
+    			opacity: 0.85;
+    			.wave{
+    				position: absolute;
+				    left: 0;
+				    width: 200%;
+				    height: 100%;
+				    background-repeat: repeat no-repeat;
+				    background-position: 0 bottom;
+				    transform-origin: center bottom;
+    			}
+    			.waveMiddle {
+    				background-size: 50% 170px;
+    				animation: move_wave 7s linear infinite;
+    			}
+		    }
+		    .bgBottom {
+		    	z-index: 5;
+		    	opacity: 0.5;
+		    	.wave{
+    				position: absolute;
+				    left: 0;
+				    width: 200%;
+				    height: 100%;
+				    background-repeat: repeat no-repeat;
+				    background-position: 0 bottom;
+				    transform-origin: center bottom;
+    			}
+    			.waveBottom{
+    				background-size: 50% 170px;
+    				animation: move_wave 10s linear infinite;
+    			}
+		    }
+		}
+		//动画
+		@keyframes move_wave {
+		    0% {
+		        transform: translateX(0) translateZ(0) scaleY(1)
+		    }
+		    50% {
+		        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+		    }
+		    100% {
+		        transform: translateX(-50%) translateZ(0) scaleY(1)
+		    }
+		}
+	}
+}
