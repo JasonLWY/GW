@@ -273,7 +273,7 @@ a:hover{ color: #0097fb;}
 		}
 	}
 	.row-middle-logo {
-		margin:30px 0 0 79px;
+		margin:30px 0 0 0;
 		text-align: center;
 		.logo-box{
 			img{
@@ -283,71 +283,111 @@ a:hover{ color: #0097fb;}
 	}
 	.row-footer-tab {
 		margin-top: 150px;
-		.tab-list{
-			height: 200px;
+		.row-footer-tab-col{
+			.tabBox{
+			.tab-list{
+			// height: 200px;
+			// width: 84%;
+    		margin: 0 auto;
 			li{
 				list-style: none;
 				float: left;	
-				width: 160px;
+				width: 350px;
 				height: 168px;
+				text-align: center;
+			}
+
+			@media screen and (max-width: 1870px) {
+				li{
+					width: 350px;
+					height: 138px;
+				}
 			}
 			li:nth-of-type(1) {
 
 				a{	
 					display: inline-block;
-					width: 100%;
-					height: 100%;
+					width: 160px;
+					height: 160px;
 					background-image: url("../image/kown.png");
 					background-repeat: no-repeat;
 					background-size: 150px 150px;
 				}
+				@media screen and (max-width: 1870px) {
+					a{
+						background-size: 120px 120px;
+					}
+				}
+
 			}
 			li:nth-of-type(2) {
-				margin-left: 173px;		
+				// margin-left: 173px;		
 				a{	
 					display: inline-block;
-					width: 100%;
-					height: 100%;
+					width: 160px;
+					height: 160px;
 					background-image: url("../image/new.png");
 					background-repeat: no-repeat;
 					background-size: 150px 150px;
-
+				}
+				@media screen and (max-width: 1870px) {
+					a{
+						background-size: 120px 120px;
+					}
 				}
 			}
 			li:nth-of-type(3) {
-				margin-left: 173px;	
+				// margin-left: 173px;	
 				a{	
 					display: inline-block;
-					width: 100%;
-					height: 100%;
+					width: 160px;
+					height: 160px;
 					background-image: url("../image/Dthing.png");
 					background-repeat: no-repeat;
 					background-size: 150px 150px;
 				}
+				@media screen and (max-width: 1870px) {
+					a{
+						background-size: 120px 120px;
+					}
+				}
 			}
 			li:nth-of-type(4) {
-				margin-left: 173px;	
+				// margin-left: 173px;	
 				a{	
 					display: inline-block;
-					width: 100%;
-					height: 100%;
+					width: 160px;
+					height: 160px;
 					background-image: url("../image/touzi.png");
 					background-repeat: no-repeat;
 					background-size: 150px 150px;
 				}
+				@media screen and (max-width: 1870px) {
+					a{
+						background-size: 120px 120px;
+					}
+				}
 			}
 			li:nth-of-type(5) {
-				margin-left: 173px;	
-				a{	
-					display: inline-block;
-					width: 100%;
-					height: 100%;
-					background-image: url("../image/yingping.png");
-					background-repeat: no-repeat;
-					background-size: 150px 150px;
+					// margin-left: 173px;	
+					a{	
+						display: inline-block;
+						width: 160px;
+						height: 160px;
+						background-image: url("../image/yingping.png");
+						background-repeat: no-repeat;
+						background-size: 150px 150px;
+						}
+						@media screen and (max-width: 1870px) {
+					      a{
+							background-size: 120px 120px;
+							}
+						}
+					}
 				}
 			}
 		}
+		
 	}
  }
  // footer底部
