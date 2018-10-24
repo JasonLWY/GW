@@ -56,8 +56,10 @@ a:hover{ color: #0097fb;}
 
  }		
  .container-fluid {
+ 	width: 100%;
  	// 顶部top less代码
 	.row-top{
+
 	 div{
 	 	height: 76px;
 		background-color: #5C8FCC;
@@ -160,25 +162,31 @@ a:hover{ color: #0097fb;}
 	 		}
 	 	}	
 	}
+	// 中部
 	.row-middle{
+		text-align: center;
 		div {
 			margin-top: 80px;
 			// background-color: red;
 		}
 		.row-topImage{
 			img:nth-of-type(1){
-				margin-left: 290px;
+				display: block;
+				margin:0 auto;
+				// margin-left: 290px;
 			}	
 			img:nth-of-type(2) {
+				display: block;
+				margin:0 auto;
 				animation-delay:0.5s;
-				margin-left: 350px;
+				// margin-left: 350px;
 			}
 			//首页搜索框css设计
 			.row-middle-serch{
 				display:inline-block;
 				width: 500px;
 				height: 70px;
-				margin-left: 260px;
+				// margin-left: 260px;
 				animation-delay:0.7s;
 				position: relative;
 				.serchInput{	
@@ -217,18 +225,22 @@ a:hover{ color: #0097fb;}
 
 	.row-middll-Hot {
 		margin-top: 20px;
+		text-align: center;
 		.Hot {
-			    padding-left: 173px;
+			    // padding-left: 173px;
 			    animation-delay:0.9s;
-			span{
+			.Hot-wrap{
+				width: 660px;
+				margin: 0 auto;
+				span{
 				color: rgb(255,255,255);
 				font-size: 19px;				
 				display: inline-block;
 				float: left;
 				font-weight: bold;
-			}	
+				}	
 			.Hot-list {
-				margin-left: -43px;
+				margin-left: -55px;
 				margin-top: -6px;
 				float: left;
 				li{
@@ -256,6 +268,8 @@ a:hover{ color: #0097fb;}
 					}
 				}
 			}
+			}    
+			
 		}
 	}
 	.row-middle-logo {
