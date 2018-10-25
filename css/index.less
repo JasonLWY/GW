@@ -60,7 +60,6 @@ a:hover{ color: #0097fb;}
  	width: 100%;
  	// 顶部top less代码
 	.row-top{
-
 	 div{
 	 	height: 76px;
 		background-color: #5C8FCC;
@@ -107,7 +106,6 @@ a:hover{ color: #0097fb;}
 	 	position: relative; 	
 	 	text-align: right;
 	 	padding-right: 120px;
-
 	 	.top-left-4-KSDH {
 	 		display:inline-block; 
 			width:150px; 
@@ -163,15 +161,18 @@ a:hover{ color: #0097fb;}
 	 		}
 	 	}	
 	}
+
+
 	// 中部
 	.row-middle{
 		text-align: center;
 		div {
 			// 中间距离顶部的距离
-			margin-top: 80px;
+			
 			// background-color: red;
 		}
 		.row-topImage{
+			margin-top: 80px;
 			img:nth-of-type(1){
 				display: block;
 				margin:0 auto;
@@ -257,6 +258,8 @@ a:hover{ color: #0097fb;}
    				}
 
 			}
+
+
 			@media screen and (max-width: 870px) {
 				.row-middle-serch {
 					width: 370px
@@ -506,7 +509,114 @@ a:hover{ color: #0097fb;}
 				margin-top: 0px;
 		}
 	}
+
+
+	// --------------------------------------快速导航css代码-------------------------------------------------------------
+		//logo input 部分的css代码
+		.row-logo{
+			margin-top: 38px;
+			.rowBox1{	
+				text-align: center;	
+			}
+			.rowBox2{
+				text-align: center;
+				position: relative;
+				padding-top: 8px;
+				//首页搜索框css设计
+			.row-middle-serch{
+				display:inline-block;
+				width: 500px;
+				height: 70px;
+				// margin-left: 260px;
+				animation-delay:0.7s;
+				position: relative;
+				.serchInput{	
+					background-color: #FFFFFF;
+					color:#C1C1C1;
+					font-size: 24px;
+					font-weight: bold;
+					width: 470px;
+    				height: 56px;
+					border-radius: 10px;
+					padding-left: 20px;
+				}
+				@media screen and (max-width: 870px) {
+					.serchInput{
+					    width: 335px;
+    					height: 46px;
+					}
+				}
+				.serch-icon{
+				        height: 46px;
+					    width: 75px;
+					    background: #9ed1ff url(../image/icons_searc.png) no-repeat center;
+					    border-radius: 5px;
+					    position: absolute;
+					    right: 23px;
+					    top: 5px;
+					    display: block;
+					    cursor: pointer;
+					    box-shadow: 0 0 5px #9ed1ff;
+				}
+				@media screen and (max-width: 870px) {
+					.serch-icon{
+						height: 38px;
+    					width: 58px;
+    					right: 26px;
+    					top: 5px;
+					}
+				}
+				// placeholder样式css设计
+				input::-webkit-input-placeholder {
+				    /* placeholder颜色  */
+				    color: #C1C1C1;
+				    /* placeholder字体大小  */
+				    font-size: 24px;
+   					}	
+   				
+
+			  }
+			
+				@media screen and (max-width: 870px) {
+					.row-middle-serch{
+						width: 374px;
+					}
+				}
+
+			}
+		}
+		// 快速导航中间内容区域的css代码	
+		.fn-row-middle{
+			margin-top: 16px;
+			.row-middle-box{
+				height: 621px;
+				.box-wrap{	
+					padding: 0px 89px;
+					height: 100%;
+					.box-wrap-wrap {
+						height: 100%;
+						padding-left: 48px;
+						background: rgba(255, 255, 255, 0.4);
+						.box-wrap-wrap1{
+						height: 100%;
+						// background-color: red;	
+						.wrap1-box{
+							height: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	//----------------------------------------end----------------------------------------------------------------------- 
+	
+
+
+
+
+
  }
+
  // footer底部
 	.footer {
 		position: fixed;
@@ -621,7 +731,7 @@ a:hover{ color: #0097fb;}
 		    }
 		}
 
-	}
+}
 @media screen and (max-width: 1022px){
 	.footer{
 			height: 168px
@@ -634,4 +744,6 @@ a:hover{ color: #0097fb;}
 			height: 194px;
 		}	
 	}
+
+
 }
