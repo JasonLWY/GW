@@ -46,6 +46,7 @@ a:hover{ color: #0097fb;}
 
 #container{
 	width: 100%;	
+	overflow: hidden;
  .bg{
  	// position: absolute;
 	width: 100%;
@@ -166,6 +167,7 @@ a:hover{ color: #0097fb;}
 	.row-middle{
 		text-align: center;
 		div {
+			// 中间距离顶部的距离
 			margin-top: 80px;
 			// background-color: red;
 		}
@@ -174,6 +176,13 @@ a:hover{ color: #0097fb;}
 				display: block;
 				margin:0 auto;
 				// margin-left: 290px;
+			}
+			// 深汕特别合作区大小调整
+			@media screen and (max-width: 1870px) {
+				img:nth-of-type(1) {
+					width: 342px;
+					height: 56px;
+				}
 			}	
 			img:nth-of-type(2) {
 				display: block;
@@ -181,6 +190,14 @@ a:hover{ color: #0097fb;}
 				animation-delay:0.5s;
 				// margin-left: 350px;
 			}
+			// 官网网址大小调整
+			@media screen and (max-width: 1870px) {
+				img:nth-of-type(2) {
+					width: 270px;
+					height: 50px;
+				}
+			}
+
 			//首页搜索框css设计
 			.row-middle-serch{
 				display:inline-block;
@@ -284,17 +301,35 @@ a:hover{ color: #0097fb;}
 	.row-footer-tab {
 		margin-top: 150px;
 		.row-footer-tab-col{
+			.tabBox1 {
+				display: block;
+			}
+			.tabBox2 {
+				display: none;
+			}
+			@media screen and (max-width: 870px) {
+
+			.tabBox1 {
+					display: none;
+				}
+			.tabBox2 {
+					display: block;
+				}
+			}
+
 			.tabBox{
 			.tab-list{
-			// height: 200px;
-			// width: 84%;
+				display: table;
     		margin: 0 auto;
 			li{
-				list-style: none;
-				float: left;	
+				// list-style: none;
+				// float: left;	
 				width: 350px;
 				height: 168px;
 				text-align: center;
+				display:table-cell;
+    			vertical-align: middle;//对其方式为middle
+
 			}
 
 			@media screen and (max-width: 1870px) {
@@ -307,14 +342,16 @@ a:hover{ color: #0097fb;}
 
 				a{	
 					display: inline-block;
-					width: 160px;
-					height: 160px;
+					width: 150px;
+					height: 150px;
 					background-image: url("../image/kown.png");
 					background-repeat: no-repeat;
 					background-size: 150px 150px;
 				}
 				@media screen and (max-width: 1870px) {
 					a{
+						width: 130px;
+						height: 130px;
 						background-size: 120px 120px;
 					}
 				}
@@ -324,14 +361,16 @@ a:hover{ color: #0097fb;}
 				// margin-left: 173px;		
 				a{	
 					display: inline-block;
-					width: 160px;
-					height: 160px;
+					width: 150px;
+					height: 150px;
 					background-image: url("../image/new.png");
 					background-repeat: no-repeat;
 					background-size: 150px 150px;
 				}
 				@media screen and (max-width: 1870px) {
 					a{
+						width: 130px;
+						height: 130px;
 						background-size: 120px 120px;
 					}
 				}
@@ -340,14 +379,16 @@ a:hover{ color: #0097fb;}
 				// margin-left: 173px;	
 				a{	
 					display: inline-block;
-					width: 160px;
-					height: 160px;
+					width: 150px;
+					height: 150px;
 					background-image: url("../image/Dthing.png");
 					background-repeat: no-repeat;
 					background-size: 150px 150px;
 				}
 				@media screen and (max-width: 1870px) {
 					a{
+						width: 130px;
+						height: 130px;
 						background-size: 120px 120px;
 					}
 				}
@@ -356,14 +397,16 @@ a:hover{ color: #0097fb;}
 				// margin-left: 173px;	
 				a{	
 					display: inline-block;
-					width: 160px;
-					height: 160px;
+					width: 150px;
+					height: 150px;
 					background-image: url("../image/touzi.png");
 					background-repeat: no-repeat;
 					background-size: 150px 150px;
 				}
 				@media screen and (max-width: 1870px) {
 					a{
+						width: 130px;
+						height: 130px;
 						background-size: 120px 120px;
 					}
 				}
@@ -372,14 +415,16 @@ a:hover{ color: #0097fb;}
 					// margin-left: 173px;	
 					a{	
 						display: inline-block;
-						width: 160px;
-						height: 160px;
+						width: 150px;
+						height: 150px;
 						background-image: url("../image/yingping.png");
 						background-repeat: no-repeat;
 						background-size: 150px 150px;
 						}
 						@media screen and (max-width: 1870px) {
 					      a{
+					      	width: 130px;
+							height: 130px;
 							background-size: 120px 120px;
 							}
 						}
@@ -388,6 +433,11 @@ a:hover{ color: #0097fb;}
 			}
 		}
 		
+	}
+	@media screen and (max-width: 870px) {
+		.row-footer-tab {
+				margin-top: 0px;
+		}
 	}
  }
  // footer底部
@@ -405,12 +455,13 @@ a:hover{ color: #0097fb;}
 				font-weight: bold;
 				font-size: 14px;
 				.row-footer-left {
-					padding:55px 0 0 135px;
+					padding:55px 0 0 0px;
 				}	
 				.row-footer-right{
-					padding:80px 0 0 135px;
+					padding:80px 0 0 0px;
 				}
 			}
+
 		}
 		.waveWrapper{
 			overflow: hidden;
@@ -498,5 +549,16 @@ a:hover{ color: #0097fb;}
 		    }
 		}
 
+	}
+@media screen and (max-width: 1022px){
+	.footer{
+			height: 168px
+		}	
+	}
+	
+@media screen and (max-width: 882px){
+	.footer{
+			height: 194px;
+		}	
 	}
 }
