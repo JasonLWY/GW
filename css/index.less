@@ -216,6 +216,12 @@ a:hover{ color: #0097fb;}
 					border-radius: 10px;
 					padding-left: 20px;
 				}
+				@media screen and (max-width: 870px) {
+					.serchInput{
+					    width: 335px;
+    					height: 46px;
+					}
+				}
 				.serch-icon{
 				    height: 48px;
 				    width: 75px;
@@ -228,6 +234,14 @@ a:hover{ color: #0097fb;}
 				    cursor: pointer;
 				    box-shadow: 0 0 5px #9ed1ff;
 				}
+				@media screen and (max-width: 870px) {
+					.serch-icon{
+						height: 38px;
+    					width: 58px;
+    					right: 26px;
+    					top: 5px;
+					}
+				}
 				// placeholder样式css设计
 				input::-webkit-input-placeholder {
 				    /* placeholder颜色  */
@@ -235,11 +249,27 @@ a:hover{ color: #0097fb;}
 				    /* placeholder字体大小  */
 				    font-size: 24px;
    				}	
+   				@media screen and (max-width: 870px) {
+   					input::-webkit-input-placeholder {
+				    /* placeholder字体大小  */
+				    font-size: 18px;
+   				}	
+   				}
 
 			}
+			@media screen and (max-width: 870px) {
+				.row-middle-serch {
+					width: 370px
+				}
+			}
 		}
+		// 调整中部的内容和顶部的距离
+		@media screen and (max-width: 870px){
+			div{
+				    margin-top: 5px;
+				}	
+			}
 	}
-
 	.row-middll-Hot {
 		margin-top: 20px;
 		text-align: center;
@@ -255,7 +285,13 @@ a:hover{ color: #0097fb;}
 				display: inline-block;
 				float: left;
 				font-weight: bold;
-				}	
+				}
+				@media screen and (max-width: 870px) {
+					span{
+						font-size:16px;
+					}
+				}
+
 			.Hot-list {
 				margin-left: -55px;
 				margin-top: -6px;
@@ -267,6 +303,9 @@ a:hover{ color: #0097fb;}
 					display: inline-block;
 					width: 90px;
 					height: 35px;
+					@media screen and (max-width: 870px) {
+						width: 75px;
+					}
 					a{
 						display: inline-block;
 						width: 100%;
@@ -283,10 +322,24 @@ a:hover{ color: #0097fb;}
 							background-color: rgba(0, 0, 0, 0.3);
 						}
 					}
+					// 热词的大小位置调整
+					@media screen and (max-width: 870px) {
+						a{
+							padding-left: 0px;
+							font-size: 14px;
+						}
+					}
+
 				}
 			}
 			}    
 			
+		}
+	}
+	// 调整热词对应上面的margin-top位置
+	@media screen and (max-width: 870px) {
+		.row-middll-Hot{
+			margin-top:0px;
 		}
 	}
 	.row-middle-logo {
@@ -296,6 +349,18 @@ a:hover{ color: #0097fb;}
 			img{
 				animation-delay:1.6s;	
 			}
+			@media screen and (max-width: 870px) {
+				img{
+					width: 250px;
+					height: 45px;
+				}
+			}
+		}
+	}
+	// 湾区门户logo调整
+	@media screen and (max-width: 870px) {
+		.row-middle-logo{
+			margin:0px 0 0 0;
 		}
 	}
 	.row-footer-tab {
@@ -303,7 +368,7 @@ a:hover{ color: #0097fb;}
 		.row-footer-tab-col{
 			.tabBox1 {
 				display: block;
-			}
+			}	
 			.tabBox2 {
 				display: none;
 			}
@@ -393,6 +458,8 @@ a:hover{ color: #0097fb;}
 					}
 				}
 			}
+
+	
 			li:nth-of-type(4) {
 				// margin-left: 173px;	
 				a{	
@@ -452,13 +519,18 @@ a:hover{ color: #0097fb;}
 			z-index: 999;
 			.row-footer {
 				color:#FFFFFF;
-				font-weight: bold;
-				font-size: 14px;
+				font-family: arial,Microsoft YaHei,'微软雅黑','宋体';
+				font-size: 16px;
 				.row-footer-left {
 					padding:55px 0 0 0px;
 				}	
 				.row-footer-right{
 					padding:80px 0 0 0px;
+				}
+			}
+			@media screen and (max-width: 870px) {
+				.row-footer{
+					font-size: 14px
 				}
 			}
 
@@ -553,6 +625,7 @@ a:hover{ color: #0097fb;}
 @media screen and (max-width: 1022px){
 	.footer{
 			height: 168px
+
 		}	
 	}
 	
