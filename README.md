@@ -7,3 +7,4 @@
 
 ##### 细节编写
 1. letter-spacing:css控制字体的间距
+2. float 元素浮动随浮

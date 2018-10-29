@@ -510,6 +510,131 @@ a:hover{ color: #0097fb;}
 		}
 	}
 }
+
+	//----------------------------------------Investment投资---------------------------------------------------------------
+	// 模板的less -> css代码
+.investment{
+	.row-investment-tab{
+		margin-top: 20px;
+		.tab-box1{
+			// background-color: red;
+		}
+		.tab-box2{
+			// background-color: green;
+			div{
+				height: 62px;
+				background-color: #7BABEC;
+				border-right: 1px solid #ffff;
+				line-height: 62px;
+				text-align: center;
+				font-family: arial,Microsoft YaHei,'微软雅黑','宋体';
+				color:#fff;
+				span{
+						font-size: 19px;
+						padding-left: 15px;
+					a{
+						color:#fff;
+						text-decoration: none;
+					}
+				}
+				@media screen and (max-width: 1570px){
+					span{
+						padding-left: 0px;
+					}
+				}	
+			}
+			@media screen and (max-width: 1203px){
+				div{
+					border-right:none;
+					border-bottom: 1px solid #fff;
+				}
+			}
+			.box2Item0{
+				position: relative;
+				.item-icon{
+					display: inline-block;
+					width: 40px;
+				    height: 62px;
+				    position: absolute;
+				    top: 5px;
+				    left: 15px;
+					background-image: url("../image/new-icon.png");
+					background-repeat: no-repeat;
+					background-size: 40px 51px
+				}
+				@media screen and (max-width: 1570px){
+					.item-icon{
+						display: none;
+					}
+				}	
+			}
+			.box2Item1{
+				position: relative;
+				.item-icon{
+					display: inline-block;
+					width: 40px;
+				    height: 62px;
+				    position: absolute;
+				    top: 5px;
+				    left: 15px;
+					background-image: url("../image/YP-icon.png");
+					background-repeat: no-repeat;
+					background-size: 40px 51px;
+				}
+				@media screen and (max-width: 1570px){
+					.item-icon{
+						display: none;
+					}
+				}	
+			}
+			.box2Item2{
+				position: relative;
+				.item-icon{
+					display: inline-block;
+					width: 40px;
+				    height: 62px;
+				    position: absolute;
+				    top: 5px;
+				    left: 15px;
+					background-image: url("../image/K-icon.png");
+					background-repeat: no-repeat;
+					background-size: 40px 51px;
+				}
+				@media screen and (max-width: 1570px){
+					.item-icon{
+						display: none;
+					}
+				}	
+			}
+			.box2Item3{
+				position: relative;
+				.item-icon{
+					    display: inline-block;
+					    width: 55px;
+					    height: 42px;
+					    position: absolute;
+					    top: 7px;
+					    left: 9px;
+					    background-image: url(../image/TZ-icon.png);
+					    background-repeat: no-repeat;
+					    background-size: 55px 44px;
+
+				}
+				@media screen and (max-width: 1570px){
+					.item-icon{
+						display: none;
+					}
+				}	
+			}
+
+		}
+		.tab-box3 {
+			// background-color: yellow;
+		}
+	}
+}
+
+	//----------------------------------------end-----------------------------------------------------------------------
 	// --------------------------------------快速导航页面css代码-------------------------------------------------------------
 .fastNavigation{ 
 		//logo input 部分的css代码
@@ -785,7 +910,7 @@ a:hover{ color: #0097fb;}
 			}
 		}
 	//----------------------------------------end----------------------------------------------------------------------- 
-	
+
  }
 
  // ------------------------------------footer底部-------------------------------------------------------------------------
