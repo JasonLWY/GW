@@ -589,7 +589,7 @@ a:hover{ color: #0097fb;}
 		.fn-row-middle{
 			margin-top: 16px;
 			.row-middle-box{
-				height: 621px;
+				// height: 621px;
 				.box-wrap{	
 					padding: 0px 89px;
 					height: 100%;
@@ -670,6 +670,15 @@ a:hover{ color: #0097fb;}
 
 									}
 								}
+							
+							@media screen and (max-width: 1625px) {
+								.boxLeft{
+									display: none;
+								}
+								.boxRight{
+									width: 96% !important;
+								}
+							}
 
 							.boxRight{
 								background-color: #ffffff; 
@@ -678,21 +687,31 @@ a:hover{ color: #0097fb;}
 								// 底部友情链接css
 								.boxRghtL-footer{
 									width: 100%;
-									position: absolute;
-									bottom: 0;
+									float: left;
+									height: 172px;
+									padding-top: 90px;
 									.footer-title{
 										height: 40px;
 										text-align: center;
-    									line-height: 40px;
+    									line-height: 36px;
+    									position: relative;
     										span{
     											display: inline-block;
-    											height: 100%;
+    											height: 90%;
     											width: 170px;
     											background-color: #0D8EE9;
     											font-size: 20px;
     											color: #fff;
-    											font-family: arial,Microsoft YaHei,'微软雅黑','宋体';
-    											
+    											position: relative;
+    											z-index: 22;			
+    										}
+    										// 蓝色线条css
+    										.line{
+    											width: 97%;
+    											height: 2px;
+    											position: absolute;
+    											top: 20px;
+    											background-color: #0D8EE9;
     										}
 									}	
 									.footer-list{
@@ -705,6 +724,11 @@ a:hover{ color: #0097fb;}
     												color: #0D8EE9;
     												border-left: 2px solid #0D8EE9;
     												padding: 0 10px;
+    												letter-spacing:2px;
+    												a{
+    													text-decoration: none;
+    													color: #0D8EE9;
+    												}
     											}
     											span:nth-of-type(3) {
     												border-right: 2px solid #0D8EE9;
