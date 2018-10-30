@@ -29,7 +29,7 @@ article,aside,footer,header,hgroup,nav,section,figure,figcaption{ display:block;
 figure,figcaption{ margin:0px; padding:0px;}
 
 /*初始化图片样式*/
-img{ border:none; border:0; max-width:100%; vertical-align:top;}
+// img{ border:none; border:0; max-width:100%; vertical-align:top;}
 
 /*初始化a的样式和字体样式*/
 a{ color:#666460; text-decoration:none; -webkit-tap-highlight-color:rgba(0,0,0,0);}
@@ -562,24 +562,64 @@ a:hover{ color: #0097fb;}
 					      position: relative;
 					      	.item{	
 					      		width: 490px;
-					      		height: 412px;
+					      		height: 416px;
 					      		background: #fff;
+					      		 .item-title{
+					      		 	color: #0F4695;
+					      		 	font-weight: bold;
+					      		 	margin-top:13px;
+					      		 	font-size: 20px;	
+					      		 	padding:0 30px;
+					      		 	font-family: arial,Microsoft YaHei,'微软雅黑','宋体';
+					      		 	height: 51px;
+					      		 }
+					      		 .item-brief-introduction{
+					      		 	color: rgb(0,0,0);
+					      		 	font-weight: bold;
+					      		 	font-size: 14px;
+    								padding: 0 30px;
+    								height: 46px;
+    								line-height: 25px;
+					      		 	font-family: arial,Microsoft YaHei,'微软雅黑','宋体';
+					      		 	display: -webkit-box;
+									-webkit-box-orient: vertical;
+									-webkit-line-clamp: 2;
+									overflow: hidden;
+					      		 }
 					      	}
 					    }
 					    .swiper-slide:nth-of-type(odd) {
-					    	// margin-right:60px !important;
 					    	.item{	
-					    		// background: yellow;
+					    		// background: yellow: ;
 					    		position: absolute;
-					      		right: 5px;
+					    		right: 0;
+					      		// right: 5px;
+					      			.item-img{
+					      				font-size:0;
+					      				line-height:0;
+										background: rgba(49, 8, 8, 0.4);
+					      				img{
+					      					display: block;
+					      					width: 100.4%;
+					      				}
+					      			}
 					    	}
 					    }
 					    .swiper-slide:nth-of-type(even) {
-					    	// margin-right:-28px !important;
 					    	.item{
 					    		// background: red;
 					    		position: absolute;
-					      		left: 10px;
+					      		left: 0px;
+					      		.item-img{
+					      			    font-size: 0;
+    									line-height: 0;
+    									background: rgba(49, 8, 8, 0.4);
+					      				img{
+					      					width: 100.4%;
+					      					display: block;
+					      					
+					      				}
+					      		}
 					    	}
 					    }
 			 		}
