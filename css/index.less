@@ -514,6 +514,112 @@ a:hover{ color: #0097fb;}
 	//----------------------------------------Investment投资---------------------------------------------------------------
 	// 模板的less -> css代码
 .investment{
+	// 中部内容区
+	.row-content-box{
+		.content-box-inBox{	
+			height: 1450px;		
+			width: 67.2%;	
+			margin:0 auto;
+			background-color: rgba(255, 255, 255, 0.6);
+			 .information{
+			 	.swiper-container{
+			 		width: 100%;
+			 		height: 412px;
+			 		.swiper-button-prev {
+			 			width: 63px;
+			 			height: 63px;
+			 			background-image: url("../image/left.png") !important;
+			 			background-repeat: no-repeat;
+			 			background-size: 53px 53px;
+			 			left: 35px;
+			 		}
+			 		.swiper-button-next {
+			 			width: 63px;
+			 			height: 63px;
+			 			background-image: url("../image/right.png") !important;
+			 			background-repeat: no-repeat;
+			 			background-size: 53px 53px;
+			 			right: 35px;
+			 		}
+			 		.swiper-wrapper{
+			 			.swiper-slide {
+					      text-align: center;
+					      font-size: 18px;
+					      // background: rgba(255,255,255,0.4);
+					      /* Center slide text vertically */
+					      display: -webkit-box;
+					      display: -ms-flexbox;
+					      display: -webkit-flex;
+					      display: flex;
+					      -webkit-box-pack: center;
+					      -ms-flex-pack: center;
+					      -webkit-justify-content: center;
+					      justify-content: center;
+					      -webkit-box-align: center;
+					      -ms-flex-align: center;
+					      -webkit-align-items: center;
+					      align-items: center;
+					      position: relative;
+					      	.item{	
+					      		width: 490px;
+					      		height: 412px;
+					      		background: #fff;
+					      	}
+					    }
+					    .swiper-slide:nth-of-type(odd) {
+					    	// margin-right:60px !important;
+					    	.item{	
+					    		// background: yellow;
+					    		position: absolute;
+					      		right: 5px;
+					    	}
+					    }
+					    .swiper-slide:nth-of-type(even) {
+					    	// margin-right:-28px !important;
+					    	.item{
+					    		// background: red;
+					    		position: absolute;
+					      		left: 10px;
+					    	}
+					    }
+			 		}
+			 	}
+			 	.information-top{
+			 		.information-top-title{
+						// title标题
+						float: left;
+						color: #0F4695;
+						display: inline-block;
+					    height: 32px;
+					    width: 95px;
+					    background-color: #A5CFFF;
+					    line-height: 32px;
+					    text-align: center;
+					    font-size: 22px;
+					    font-weight: bold;
+					    border-radius: 10px;
+					    margin-left: 30px;
+					    margin-top: 20px;
+			 		}
+			 		.more{
+						// 了解更多
+						float: right;	
+						text-decoration: none;
+						color: #1A5EC0;
+						display: inline-block;
+    					margin: 26px 25px 0 0;
+    					font-weight: bold;
+    						a{
+    							color: #2A73DC;
+    							text-decoration: none;
+    							letter-spacing:1px;
+    						}
+			 		}	
+			 	}
+			 }
+		}
+	}
+	// 头部导航
 	.row-investment-tab{
 		margin-top: 20px;
 		.tab-box1{
