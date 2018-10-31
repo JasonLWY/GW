@@ -512,6 +512,112 @@ a:hover{ color: #0097fb;}
 }
 	//---------------------------------------------Travel----------------------------------------------------------------
 	.travel{
+		.row-content-box{
+		// padding: 0 40px;
+			padding: 0 30px 25px 30px;
+			.content-box-inBox{	
+				height: 1490px;		
+				width: 67.2%;	
+				margin:0 auto;
+				background-color: rgba(255, 255, 255, 0.7);
+				 .scenery{
+				 	.scenery-top{
+				 		.scenery-top-title{
+							// title标题
+							float: left;
+							color: #0F4695;
+							display: inline-block;
+						    height: 32px;
+						    width: 95px;
+						    background-color: #A5CFFF;
+						    line-height: 32px;
+						    text-align: center;
+						    font-size: 22px;
+						    font-weight: bold;
+						    border-radius: 10px;
+						    margin-left: 30px;
+						    margin-top: 20px;
+				 		}
+			 		}
+			 		.swiper-container{
+			 			height: 233px;
+			 			.swiper-button-prev{
+			 				left: 0px;
+			 				width: 79px;
+    						height: 79px;
+    						margin-top: -60px;
+			 				background-image: url("../image/traceleft.png");
+			 				background-size: 55px 55px;
+			 			}
+			 			.swiper-button-next{
+			 				background-image: url("../image/traceRight.png");
+			 				width: 79px;
+    						height: 79px;
+			 				right: 0;
+			 				margin-top: -60px;
+			 				background-size: 55px 55px;
+			 			}
+			 			.swiper-slide {
+					      text-align: center;
+					      font-size: 18px;
+					      // background: #fff;
+						  position: relative;
+					     	.item-img{
+								position: relative;
+								a{
+									img{
+										border-radius: 10px;
+									}
+								}
+					     	}
+					    }
+					    .swiper-slide:nth-of-type(3n-2){
+					    	.item-img {
+					    		position: relative;
+					    		a{
+									position: absolute;
+									display: inline-block;
+									width: 340px;	
+									right: -23px;
+									img{
+						    				
+									    width: 100%;
+					    			}	
+					    		}
+					    	}
+					    }
+					    .swiper-slide:nth-of-type(3n-1){
+					    	.item-img {
+					    		position: relative;
+					    		 a{
+									position: absolute;
+								    display: inline-block;
+								    width: 345px;
+								    left: 20px;					
+					    		 }
+					    		img{
+					    			width: 100%;
+					    		}
+					    	}
+					    }	
+					    .swiper-slide:nth-of-type(3n){
+					    	.item-img {
+					    		position: relative;
+					    		 a{
+									position: absolute;
+								    display: inline-block;
+								    width: 345px;
+								    left: -30px;				
+					    		 }
+					    		img{
+					    			width: 100%
+					    		}
+					    	}
+					    }		
+			 		}
+				 }
+			}
+		}
 		.row-travel-tab{
 			margin-top: 20px;
 			.tab-box1{
@@ -716,7 +822,6 @@ a:hover{ color: #0097fb;}
 						      	img{
 						      			width: 245px;
 									    position: absolute;
-									   
 									    top: 15px;
 						      	}
 						      	p{
