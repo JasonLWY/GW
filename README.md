@@ -8,3 +8,4 @@
 ##### 细节编写
 1. letter-spacing:css控制字体的间距
 2. float 元素浮动随浮
+3. dl dt dd {dl就是定义一个列表 dt 说明列表的标题 dd 就是内容而且能进行缩进}

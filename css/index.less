@@ -516,20 +516,78 @@ a:hover{ color: #0097fb;}
 		// padding: 0 40px;
 			padding: 0 30px 25px 30px;
 			.content-box-inBox{	
-				height: 1490px;		
+				height: 1000px;		
 				width: 67.2%;	
 				margin:0 auto;
 				background-color: rgba(255, 255, 255, 0.7);
 				 .tasteLife{
 				 	.tasteLife-box{
-				 		height: 457px;	
-						// background-color: red;
+				 		height: 410px;	
+						position: relative;
 						 .box-left{
-						 	width: 406px;
+						 	width: 390px;
 						 	height: 100%;
 						 	margin-left: 30px;
+						 	position: absolute;
+						 	left: 0;
 						 	background-image: url("../image/life.png");
 						 	background-repeat: no-repeat;
+						 	background-size: contain;;
+						 }
+						 .box-right{
+						 	width: 880px;
+						 	height: 100%;
+							position: absolute;
+							right: 0;
+							z-index: 22px;						
+							 .right-wrap{
+							 	width: 100%;
+							 	height: 100%;
+								overflow:hidden;
+								 dt{
+								 	width:55px;
+									height:410px;
+									float:left;
+									font-size:25px;
+									line-height:32px;	
+									text-align: center;
+									color:#fff;
+									cursor:pointer;
+									padding:30px 10px 10px 10px;
+								 	} 
+								 	dt:nth-of-type(1){	background-color:#88BBFF;}
+									dt:nth-of-type(2){	background-color:#A4CBFF;}
+									dt:nth-of-type(3){	background-color:#8AA6F7;}
+									dt:nth-of-type(4){ color:#000;	background-color:#7BABEC;}
+									dd{
+									 	float:left; 
+									 	font-size: 14px;
+									 	position:relative;
+									 	display:block; 
+									 	width:630px; 
+									 	height:410px; 
+									 	overflow:hidden; 
+									 	background:#e1f3ff;
+									 	color: #000;
+									 	 .slide-inBox{
+									 	 	padding: 10px;
+									 	 	p{
+									 	 		height: 180px;
+									 	 		padding: 30px 15px 0 15px;
+									 	 		line-height: 28px;
+									 	 		font-size: 14px;
+									 	 		font-family: 宋体;
+
+									 	 	}	
+									 	 }
+									 	 img:nth-of-type(1) {
+									 	 	margin-left: 5px;
+									 	 }
+									 	 img:nth-of-type(2) {
+									 	 	margin-left: 10px;
+									 	 }
+									 }
+							 }
 						 }
 				 	}
 					.tasteLife-top{
