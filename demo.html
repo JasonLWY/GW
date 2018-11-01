@@ -5,32 +5,33 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<style type="text/css" media="screen">
-		.container>div {
-				
-			 	text-align: center;
+	body {
+	margin: 0;
+	overflow: hidden;
+	}
 
-		}
-		.C1{
-			background: red;
-		}
-		.C2{
-			background-color: green;
-		}
+canvas {
+		background-image: radial-gradient(#666, #333);
+	}
+
+	#instructions {
+	position: absolute;
+	color: #fff;
+	bottom: 0;
+	padding-bottom: 6px;
+	font-family: sans-serif;
+	width: 100%;
+	text-align: center;
+	pointer-events: none;
+}
 	</style>
 </head>
 <body>
-		<div class="container">
-				<div class="row">
-				  <div class="col-lg-2 C1">.col-md-6</div>
-				  <div class="col-lg-8 C2">
-				  	<div class="col-lg-3 C1">S</div>
-				  	<div class="col-lg-3 C2">1</div>
-				  	<div class="col-lg-3 C1">3</div>
-				  	<div class="col-lg-3 C2">4</div>
+<div id="three-container"></div>
 
-				  </div>
-				  <div class="col-lg-2 C1">.col-md-6</div>
-				</div>
-		</div>
+<div id="instructions">
+	click and drag to control the animation
+</div>
+<script src= "util/demo.js" charset="utf-8" async defer></script>
 </body>
 </html>
