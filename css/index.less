@@ -517,10 +517,71 @@ a:hover{ color: #0097fb;}
 		// padding: 0 40px;
 			padding: 0 30px 25px 30px;
 			.content-box-inBox{	
-				height: 1000px;		
+				// height: 1000px;		
 				width: 74%;	
 				margin:0 auto;
 				background-color:#fff;
+				position: relative;
+				padding: 0 25px;
+				.inBox-word{
+					margin-top: 15px;
+					.word-text{
+						margin-top:35px;
+						letter-spacing:1px;
+						padding: 0px 30px;
+						line-height: 25px;
+						position: relative;
+						img{
+							display: block;
+					       	margin:0 auto
+						}
+					}
+					.word-annotation{
+						text-align: center;
+						font-size: 14px;
+						span{
+							margin-right:30px;
+						}
+					}	
+					.word-title{
+						height: 58px;
+						background: #EEEEEE;
+						text-align: center;
+						color:#2A73DC;
+						font-size: 20px;
+						line-height: 58px;
+					}
+				}
+				
+				.location{	
+							position: absolute;
+							left: 15px;
+							top: 5px;
+					 		display: inline-block;
+							width: 50px;
+							height: 66px;
+					 		background-image: url("../image/location.png");
+					 		background-repeat: no-repeat;
+					 		background-size: 50px 55px
+					 	}
+					 .inBox-top-wrap{
+						padding: 30px 18px 0 18px;
+						div:nth-of-type(1){
+							    margin-top: 5px;
+							    height: 2px;
+							    background: #eae6e6;
+							}
+						span{	
+								color:#ADADAD;
+							    font-family: arial,Microsoft YaHei,'微软雅黑','宋体';
+							    font-size: 15px;
+							    font-weight: bold;
+								letter-spacing:1px;
+						}
+						span:nth-of-type(1) {
+							margin-left: 60px;
+						}
+					 }
 			}
 		}
 	.row-newCenter-tab{
