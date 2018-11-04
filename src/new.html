@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/template3.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
 </head>
 <body>
 	<div id="container">
@@ -79,7 +80,19 @@
 	            		<div class="row">
 	            			<div class="col-lg-7 left">
 	            				<div class="left-top">
-	            					
+	            					<div class="swiper-container">
+									    <div class="swiper-wrapper">
+									      <div class="swiper-slide"><img src="../image/loopnew.gif" alt=""></div>
+									      <div class="swiper-slide"><img src="../image/newImage1.png" alt=""></div>
+									      <div class="swiper-slide"><img src="../image/loopnew.gif" alt=""></div>
+									      <div class="swiper-slide"><img src="../image/loopnew.gif" alt=""></div>
+									    </div>
+									    <!-- Add Pagination -->
+									    <div class="swiper-pagination swiper-pagination-white"></div>
+									    <!-- Add Arrows -->
+									    <div class="swiper-button-next swiper-button-white"></div>
+									<div class="swiper-button-prev swiper-button-white"></div>
+								  </div>
 	            				</div>
 	            				<div class="left-bottom">
 	            					
@@ -102,5 +115,20 @@
 			</div>
 		</div>
 	</div>
+	<script src="../util/swiper.min.js"></script>
+	<script>
+	    var swiper = new Swiper('.swiper-container', {	
+	      spaceBetween: 30,
+	      effect: 'fade',
+	      pagination: {
+	        el: '.swiper-pagination',
+	        clickable: true,
+	      },
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	      },
+	    });
+  	</script>
 </body>
 </html>
