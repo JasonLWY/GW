@@ -82,16 +82,15 @@
 	            				<div class="left-top">
 	            					<div class="swiper-container">
 									    <div class="swiper-wrapper">
-									      <div class="swiper-slide"><img src="../image/loopnew.gif" alt=""></div>
-									      <div class="swiper-slide"><img src="../image/newImage1.png" alt=""></div>
-									      <div class="swiper-slide"><img src="../image/loopnew.gif" alt=""></div>
-									      <div class="swiper-slide"><img src="../image/loopnew.gif" alt=""></div>
+									      <div class="swiper-slide"><img src="../image/loopnew1.jpg" alt=""></div>
+									      <div class="swiper-slide"><img src="../image/loopnew2.jpg" alt=""></div>
+									      <div class="swiper-slide"><img src="../image/loopnew0.gif" alt=""></div>
 									    </div>
 									    <!-- Add Pagination -->
 									    <div class="swiper-pagination swiper-pagination-white"></div>
 									    <!-- Add Arrows -->
-									    <div class="swiper-button-next swiper-button-white"></div>
-									<div class="swiper-button-prev swiper-button-white"></div>
+									    <!-- <div class="swiper-button-next swiper-button-white"></div> -->
+									<!-- <div class="swiper-button-prev swiper-button-white"></div> -->
 								  </div>
 	            				</div>
 	            				<div class="left-bottom">
@@ -124,10 +123,14 @@
 	        el: '.swiper-pagination',
 	        clickable: true,
 	      },
-	      navigation: {
-	        nextEl: '.swiper-button-next',
-	        prevEl: '.swiper-button-prev',
+	      autoplay: {
+	        delay: 2500,
+	        disableOnInteraction: false,
 	      },
+		      // navigation: {
+		      //   nextEl: '.swiper-button-next',
+		      //   prevEl: '.swiper-button-prev',
+		      // },
 	    });
   	</script>
 </body>
